@@ -1,0 +1,15 @@
+#summary Introduction to the Factory55 framework.
+
+= Introduction =
+
+Factory55 started as an experiment in refactoring a Fusebox 4 application into something else. All of the other major CFML frameworks didn't like being integrated into the same application context as the existing FB4 application. I wanted to find something that used solid design patterns but didn't get in the way of legacy code.
+
+= Thoughts on frameworks =
+
+These are personal things that I like or don't like about a lot of different frameworks
+
+===IOC===
+While IOC is the hot way to program recently. I don't like behind the scenes magic of the framework calling things that I didn't tell it to call. While I know this is a convention. I just like to see the actual calls in the code. 
+
+===Convention over configuration rocks! (if you like the convention)===
+The framework is based a lot on what I saw in Grails development. Things like code organization and well defined conventions allowed me to develop very quickly while adhering to a standard way of programming. The framework provides you to create your usual controllers, services, domain objects, beans and enums. But the convention forces you to only use them in the proper places. Should you call a domain object from your controller? No! So you have to wire it in through your service layer first.
